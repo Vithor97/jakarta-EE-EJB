@@ -18,7 +18,9 @@ public class AgendamentoEmailServico {
 		return dao.listar();
 	}
 	
-	public String listarw() {
-		return "oiii";
+	public void inserir(AgendamentoEmail agendamentoEmail) {
+		agendamentoEmail.setAgendado(false);
+		
+		dao.inserir(agendamentoEmail);
 	}
 }
